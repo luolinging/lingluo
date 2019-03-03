@@ -1,21 +1,24 @@
 <template>
   <div id="app">
-    <blog-index></blog-index>
-    
+    <blogindex></blogindex>
+
     <!-- <router-view/>helloworld.vue文件内容在下 -->
   </div>
 </template>
 
 <script>
-import blogindex from './components/blogIndex.vue';
+import blogindex from "./components/blogIndex.vue";
 export default {
-  name: 'Blog'
-}
+  name: "Blog",
+  components: {
+    blogindex: blogindex
+  }
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
