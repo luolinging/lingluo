@@ -21,7 +21,7 @@
           <el-menu-item index="2-4-2">Grid布局</el-menu-item>
         </el-submenu>
       </el-submenu>
-      <el-menu-item index="3">边框样式</el-menu-item>
+      <el-menu-item index="3">JavaScript</el-menu-item>
     </el-menu>
   </div>
 </template>
