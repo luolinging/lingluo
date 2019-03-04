@@ -2,7 +2,7 @@
   <div id="main">
     <div id="main_msg">
       <p>{{msg}}</p>
-      <router-link id="main_blog_link" to="/blogIndex">enter</router-link>
+      <router-link id="main_blog_link" to="/blogContent">enter</router-link>
     </div>    
   </div>
 </template>

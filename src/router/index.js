@@ -4,7 +4,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import blogMain from '@/components/blogMain'
-import blogIndex from '@/components/blogIndex'
+import blogTop from '@/components/blogTop'
+import blogContent from '@/components/blogContent'
+import blogAside from '@/components/blogAside'
+import blogContentMain from '@/components/blogContentMain'
 
 Vue.use(Router)
 
@@ -18,9 +21,24 @@ export default new Router({
     },
     {
       //compnent属性必须是一个组件的模板对象，不需要加 ‘ ’
-      path: '/blogIndex',//表示监听哪个路由链接的地址
-      name: 'blogIndex',
-      component: blogIndex//如果路由是前面匹配到的地址，则展示component属性对应的那个组件
+      path: '/blogTop',//表示监听哪个路由链接的地址
+      name: 'blogTop',
+      component: blogTop//如果路由是前面匹配到的地址，则展示component属性对应的那个组件
+    },
+    {
+      path: '/blogContent',
+      name: 'blogContent',
+      component: blogContent
+    },
+    {
+      path: '/blogAside',
+      name: 'blogAside',
+      component: blogAside
+    },
+    {
+      path: '/blogContentMain',
+      name: 'blogContentMain',
+      component: blogContentMain
     }
   ]
 })

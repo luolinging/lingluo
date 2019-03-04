@@ -1,5 +1,5 @@
 <template>
-  <div class="blog_index">
+  <div class="blog_top">
     <el-menu
       :default-active="activeIndex2"
       class="el-menu-demo"
@@ -27,7 +27,7 @@
 </template>
 <script>
 export default {
-  name: "blogIndex",
+  name: "blogTop",
   data() {
     return {
       activeIndex: "1",
@@ -43,7 +43,12 @@ export default {
 </script>
 
 <style scoped>
-.blog_index{
-  background-color: aliceblue;
+.el-menu-demo {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.blog_top{
+  width: 100%;
+  position: fixed;
 }
 </style>
