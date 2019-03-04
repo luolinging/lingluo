@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="blog_index">
     <el-menu
       :default-active="activeIndex2"
       class="el-menu-demo"
@@ -42,6 +42,8 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.blog_index{
+  background-color: aliceblue;
+}
 </style>

@@ -9,6 +9,7 @@ import blogIndex from '@/components/blogIndex'
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',
   routes: [
     {
       path: '/',
@@ -16,9 +17,10 @@ export default new Router({
       component: blogMain
     },
     {
-      path: '/blogIndex',
+      //compnent属性必须是一个组件的模板对象，不需要加 ‘ ’
+      path: '/blogIndex',//表示监听哪个路由链接的地址
       name: 'blogIndex',
-      component: blogIndex
+      component: blogIndex//如果路由是前面匹配到的地址，则展示component属性对应的那个组件
     }
   ]
 })

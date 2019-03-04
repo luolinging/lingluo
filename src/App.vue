@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <blogindex></blogindex>
-
-    <!-- <router-view/>helloworld.vue文件内容在下 -->
+  <div id="app">   
+    <router-view/>
   </div>
 </template>
 
 <script>
-import blogindex from "./components/blogIndex.vue";
 export default {
-  name: "Blog",
-  components: {
-    blogindex: blogindex
-  }
+  name: "Blog"
 };
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
