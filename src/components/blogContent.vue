@@ -48,12 +48,14 @@ export default {
 #content_aside {
   margin-right: 1%;
   border: 2px solid red;
+  border-radius: 10px;
   /* height: 100%;高度自适应 */
   height: 500px;
   width: 200px;
 }
 #content_main {
   border: 2px solid red;
+  border-radius: 10px;
   height: 100%;
 }
 #content_footer {

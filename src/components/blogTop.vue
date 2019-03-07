@@ -9,7 +9,9 @@
       text-color="#fff"
       active-text-color="#ffd04b"
     >
-      <el-menu-item index="1">Html</el-menu-item>
+      <el-menu-item index="1">
+        <router-link id="htmlstyle" to="/html/122222">Html</router-link>
+      </el-menu-item>
       <el-submenu index="2">
         <template slot="title">CSS</template>
         <el-menu-item index="2-1">选择器</el-menu-item>
@@ -44,11 +46,14 @@ export default {
 
 <style scoped>
 .el-menu-demo {
-    padding-left: 7%;
-    padding-right: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
-.blog_top{
+.blog_top {
   width: 100%;
   position: fixed;
+}
+#htmlstyle{
+  text-decoration: none;
 }
 </style>

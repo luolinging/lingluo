@@ -3,6 +3,7 @@
     <div id="main_msg">
       <p>{{msg}}</p>
       <router-link id="main_blog_link" to="/blogContent">enter</router-link>
+      <router-link id="main_blog_link" to="/blogContentAlias">enterAlias</router-link>
     </div>    
   </div>
 </template>
@@ -20,7 +21,7 @@ export default {
 
 <style scoped>
 #main {
-  background: url("../common/image/002.jpg") no-repeat;
+  background: url("../common/image/background.jpg") no-repeat;
   position: fixed;
   background-size: cover;
   width: 100%;
